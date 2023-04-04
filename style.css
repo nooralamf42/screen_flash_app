@@ -1,35 +1,60 @@
 body{
-    text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #F9F5EB;
 }
-
-h1{
+.container{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 150px;
+    margin: 50px auto;
+    width: 100%;
+    text-align: center;
 }
 
-.bodyFlash{
-    background-color: white;
-    color: black;
+.inputSection{
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
 }
 
-.btn{
-    padding: 10px 60px;
-    font-size: 16px;
-    border-radius: 17px;
-    cursor: pointer;
-    background-color: white;
+input{
+    width: 600px;
+    padding: 0 0 0 15px;
     border: none;
+    border-radius: 12px 0 0 12px;
 }
 
-.btnOff{
-    background-color: greenyellow;
-    color: rgb(0, 0, 0);
+input:focus{
+    outline: none;
+    border: solid 1px grey;
 }
 
-@media (max-width:600px) {
-    h1{
-        margin-top: 150px;
+button{
+    font-size: 1rem;
+    padding: 12px 15px;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: #000;
+    border-radius: 0 12px 12px 0;
+}
+
+button:hover{
+    background-color: #000000c9;
+}
+
+h2{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+img{
+    width: 500px;
+}
+
+@media (max-width: 915px) {
+    input{
+        width: 60%;
+    }
+    img{
+        width: 70%;
     }
 }
